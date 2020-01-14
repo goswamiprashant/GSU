@@ -1,0 +1,175 @@
+<head>
+<style>
+
+.layout {
+  
+  border-radius: 5px;
+  background-color: #c4dfe6;
+  padding: 12px;
+  margin-right:20%;
+  margin-left:20%;
+  box-shadow:3px 3px 2px 2px black;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 2px;
+}
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 2px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+  .col-25, .col-75, input[type=submit], p.para1 {
+    width: 100%;
+    margin-top: 0;
+  }
+
+p.para1{
+font-family:"cooper black";
+font-style:bold;
+color:black;
+background-color: rgb(255,153,104);
+border-style:groove;
+border-color:black;
+border-width:2px;
+margin-right:400px;
+line-height:1.5em;
+HEIGHT:50PX;
+cursor:crosshair;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover {
+  opacity: 0.8;
+}
+.can_btn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+.class1{
+  padding: 16px;
+ text-align: center;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+  span.psw {
+    display: block;
+    float: none;
+  }
+ 
+.layout1{
+margin-left:20%;
+margin-right:20%;
+}
+ 
+
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(113,0,0);
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+
+input[type=submit] {
+  background-color: rgb(228,228,228);
+  color: black;
+  padding: 12px 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  
+  
+  
+}
+
+</style>
+
+</head>
+	<br/><br/><br/><br/><br/><br/><br/>
+
+<div style="padding:30px;box-shadow:3px 3px 2px 2px gray;" class="layout">
+  
+
+<form style="margin-left:auto;margin-right:auto;width:80%;"action="index.php" method="post">
+
+ <fieldset>
+<legend> <h2 style="text-align:center;><font="arial" color="blue">Print Your Idea
+</font></h2></legend>
+<div style="padding:20px;">
+    <div class="row">
+      <div class="col-25">
+      
+       <label style="height:10px;" for="name">Name</label>
+        </div>
+         <div class="col-75">
+          
+        <input height="10px"  type="text" id="name" name="name" placeholder="Your name..">
+      </div>
+    </div>
+   
+<div class="row">
+<div class="col-25">
+        <label style="height:10px;" for="email">Email</label>
+      </div>
+ <div class="col-75">
+<input height="15px" type="text" name="email" placeholder="Email"  >
+</div></div>
+<div class="row">
+      <div class="col-25">
+        <label style="height:15px;" for="comments">Suggestions and Comments</label>
+      </div>
+      <div class="col-75">
+        <textarea style="height:60px;" id="subject" name="message" placeholder="Write your views here..." style="height:200px"></textarea>
+      </div>
+    </div>
+<br>
+    <div class="row">
+      <input style="height:40px;width:15%;"align="center" type="submit" value="Submit" >
+    </div>
+    </div>
+  </form>
+</div>
+
+</fieldset>
+
